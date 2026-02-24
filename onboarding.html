@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadeReal | Welcome Aboard</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            teal: '#00D2A0',
+                            gray: '#F5F5F7',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'glow': '0 0 20px rgba(0, 210, 160, 0.3)',
+                    },
+                    backgroundImage: {
+                        'gradient-custom': 'linear-gradient(135deg, #a7f3d0 0%, #fbcfe8 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        
+        /* Animations */
+        .reveal { opacity: 0; transition: all 1s ease-out; }
+        .reveal.active { opacity: 1; transform: translate(0, 0); }
+        .slide-up { transform: translateY(30px); }
+
+        /* Custom Form Styles */
+        .form-input {
+            width: 100%;
+            background-color: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 500;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .form-input:focus {
+            background-color: white;
+            border-color: #00D2A0;
+            box-shadow: 0 0 0 4px rgba(0, 210, 160, 0.1);
+        }
+        .form-label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+            color: #374151;
+        }
+        
+        /* Progress Bar */
+        .step-line {
+            height: 3px;
+            flex: 1;
+            background: #E5E7EB;
+            margin: 0 15px;
+            border-radius: 10px;
+        }
+        .step-active { background: #00D2A0; }
+    </style>
+</head>
+<body class="bg-[#F5F5F7] text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="https://madreal.uk/" class="flex items-center gap-1 hover:opacity-80 transition">
+                <span class="text-2xl font-black tracking-tight">made<span class="text-brand-teal">real</span></span>
+            </a>
+            <div class="text-sm font-bold text-gray-400 uppercase tracking-wider">
+                Client Onboarding
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-12 px-6">
+        <div class="max-w-3xl mx-auto text-center reveal slide-up">
+            <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-1.5 rounded-full font-bold text-sm mb-6">
+                <i class="fas fa-check-circle"></i> Payment Received
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4">
+                Welcome to the club.
+            </h1>
+            <p class="text-xl text-gray-500 font-medium">
+                We need a few details to get your site built. Fill this out, and we'll have your draft ready in 48 hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Progress Steps -->
+    <section class="px-6 mb-12">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-center justify-between reveal slide-up">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center gap-2 opacity-50">
+                <div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center font-bold text-sm"><i class="fas fa-check"></i></div>
+                <div class="text-xs font-bold uppercase hidden md:block">Payment</div>
+            </div>
+            <div class="step-line step-active"></div>
+            
+            <!-- Step 2 (Active) -->
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center font-bold text-sm shadow-glow">2</div>
+                <div class="text-xs font-bold uppercase hidden md:block text-brand-teal text-center">Details</div>
+            </div>
+            <div class="step-line"></div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center gap-2 opacity-30">
+                <div class="w-8 h-8 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold text-sm">3</div>
+                <div class="text-xs font-bold uppercase hidden md:block text-center">Build</div>
+            </div>
+            <div class="step-line"></div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center gap-2 opacity-30">
+                <div class="w-8 h-8 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold text-sm">4</div>
+                <div class="text-xs font-bold uppercase hidden md:block text-center">Live</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FORM SECTION -->
+    <section class="px-4 pb-32">
+        <div class="max-w-3xl mx-auto">
+            
+            <!-- 
+                FORMSUBMIT.CO SETUP:
+                Action: contact@madreal.uk
+            -->
+            <form action="https://formsubmit.co/contact@madreal.uk" method="POST" enctype="multipart/form-data" class="bg-white rounded-[32px] shadow-xl border border-gray-100 overflow-hidden reveal slide-up">
+                
+                <!-- Hidden Configuration Fields -->
+                <input type="hidden" name="_subject" value="New MadeReal Website Submission!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://madreal.uk/">
+
+                <!-- Header of Form -->
+                <div class="bg-gradient-custom p-8 md:p-10 border-b border-gray-100">
+                    <h2 class="text-2xl font-black">Project Details</h2>
+                    <p class="text-gray-600 font-medium">Don't worry if you don't have everything perfect. We can tweak it later.</p>
+                </div>
+
+                <div class="p-8 md:p-12 space-y-10">
+
+                    <!-- Section 1: The Basics -->
+                    <div class="space-y-6">
+                        <h3 class="flex items-center text-lg font-bold border-b border-gray-100 pb-2">
+                            <i class="fas fa-user-circle text-brand-teal mr-3"></i> The Basics
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Your Full Name</label>
+                                <input type="text" name="Contact Name" class="form-input" placeholder="e.g. John Smith" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Business Name</label>
+                                <input type="text" name="Business Name" class="form-input" placeholder="e.g. JS Plumbing" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Email Address</label>
+                                <input type="email" name="Email" class="form-input" placeholder="Where do we send the draft?" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" name="Phone" class="form-input" placeholder="For WhatsApp updates" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Business Info -->
+                    <div class="space-y-6">
+                        <h3 class="flex items-center text-lg font-bold border-b border-gray-100 pb-2">
+                            <i class="fas fa-briefcase text-brand-teal mr-3"></i> Business Details
+                        </h3>
+
+                        <div>
+                            <label class="form-label">What do you do? (Service/Trade)</label>
+                            <input type="text" name="Trade" class="form-input" placeholder="e.g. Domestic Electrician, Landscaper..." required>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Areas you cover</label>
+                            <input type="text" name="Areas" class="form-input" placeholder="e.g. Colne, Burnley, and 20 mile radius" required>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Address for Google Maps (Optional)</label>
+                            <input type="text" name="Address" class="form-input" placeholder="Leave blank if you want to hide your address from the public">
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Design & Content -->
+                    <div class="space-y-6">
+                        <h3 class="flex items-center text-lg font-bold border-b border-gray-100 pb-2">
+                            <i class="fas fa-paint-roller text-brand-teal mr-3"></i> Design & Content
+                        </h3>
+
+                        <div>
+                            <label class="form-label">Describe your services</label>
+                            <p class="text-xs text-gray-500 mb-2">Just list what you offer. We will write the professional text for you.</p>
+                            <textarea name="Services Description" class="form-input h-32 resize-none" placeholder="e.g. I do boiler repairs, bathroom installs, and emergency callouts..."></textarea>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Do you have a domain name?</label>
+                            <select name="Domain Status" class="form-input">
+                                <option value="Need one">No, I need you to buy one (FREE for 1st year, then £9/yr thereafter)</option>
+                                <option value="Have one">Yes, I already own one</option>
+                                <option value="Not sure">Not sure / Help me choose</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Upload Logo / Images (Optional)</label>
+                            <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center bg-gray-50 hover:bg-gray-100 transition cursor-pointer relative">
+                                <input type="file" name="attachment" accept="image/png, image/jpeg, image/pdf" multiple class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-brand-teal mb-2"></i>
+                                <div class="font-bold text-sm">Click to upload files</div>
+                                <div class="text-xs text-gray-400 mt-1">Logo, previous work photos, etc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-6">
+                        <button type="submit" class="w-full bg-black text-white py-5 rounded-xl font-bold text-xl hover:bg-gray-800 transition transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3">
+                            <span>Start The Build</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <p class="text-center text-xs text-gray-400 mt-4 px-4 leading-relaxed">
+                            *Free domain applies to .co.uk or .com extensions for the first 12 months. £9/year thereafter.<br>
+                            By submitting, you agree to our standard terms of service.
+                        </p>
+                    </div>
+
+                </div>
+            </form>
+            
+            <!-- Reassurance Box -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center reveal slide-up">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-clock text-brand-teal text-2xl mb-3"></i>
+                    <h4 class="font-bold">48 Hour Turnaround</h4>
+                    <p class="text-xs text-gray-500 mt-1">We start work immediately.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fab fa-whatsapp text-brand-teal text-2xl mb-3"></i>
+                    <h4 class="font-bold">WhatsApp Updates</h4>
+                    <p class="text-xs text-gray-500 mt-1">We keep you posted directly.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-undo text-brand-teal text-2xl mb-3"></i>
+                    <h4 class="font-bold">Unlimited Revisions</h4>
+                    <p class="text-xs text-gray-500 mt-1">Until you are 100% happy.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-gray-400 text-sm bg-white border-t border-gray-200">
+        <p class="font-medium">MadeReal Design & Print</p>
+        <p class="mt-2">Need help? WhatsApp us: 07396 710 347</p>
+    </footer>
+
+    <!-- Reveal Script -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 120;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
+    </script>
+
+</body>
+</html>
