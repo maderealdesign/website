@@ -89,11 +89,11 @@
                         <h3 class="text-sm font-black text-teal-800 uppercase tracking-widest">Image Link Manager</h3>
                         <span id="imgCount" class="text-xs font-bold bg-brand-teal text-white px-2 py-1 rounded">0 Found</span>
                     </div>
-                    <div id="imageLinksList" class="max-h-60 overflow-y-auto p-2 space-y-2">
+                    <div id="imageLinksList" class="max-h-[400px] overflow-y-auto p-2 space-y-2">
                         <!-- JS will inject image rows here -->
                     </div>
                     <div class="p-4 bg-white border-t border-brand-teal/10">
-                        <button id="applyLinksBtn" class="w-full bg-brand-teal text-white py-2 rounded-lg font-bold text-sm hover:bg-teal-500 transition">Apply New Links to Code</button>
+                        <button id="applyLinksBtn" class="w-full bg-brand-teal text-white py-3 rounded-lg font-bold hover:bg-teal-500 transition shadow-md">Apply New Links to Code</button>
                     </div>
                 </div>
 
@@ -202,13 +202,23 @@
             
             images.forEach((src, index) => {
                 const row = document.createElement('div');
-                row.className = "img-link-row p-3 rounded flex flex-col gap-2 border border-gray-100 bg-white";
+                row.className = "img-link-row p-4 rounded flex gap-4 border border-gray-200 bg-white items-center shadow-sm";
+                
+                // Construct the full image path if it's a relative path (so the preview thumbnail works)
+                let previewSrc = src;
+                if(src.startsWith('images/') || src.startsWith('/images/')) {
+                    previewSrc = window.location.origin + '/' + src.replace(/^\//, '');
+                }
+
                 row.innerHTML = `
-                    <div class="flex justify-between items-center">
-                        <span class="text-[10px] font-black text-gray-400 uppercase">Image #${index + 1}</span>
-                        <span class="text-[10px] text-gray-400 truncate max-w-[200px]">Current: ${src}</span>
+                    <div class="w-16 h-16 shrink-0 bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200 overflow-hidden relative">
+                        <img src="${previewSrc}" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                        <i class="fas fa-image text-gray-300 text-xl hidden absolute"></i>
                     </div>
-                    <input type="text" data-original="${src}" class="image-update-input w-full px-3 py-2 border rounded text-xs focus:border-brand-teal outline-none" placeholder="Paste new link here (leave blank to keep current)">
+                    <div class="flex-1 flex flex-col gap-1.5">
+                        <span class="text-[10px] font-black text-gray-400 uppercase tracking-wider">Image #${index + 1}</span>
+                        <input type="text" data-original="${src}" value="${src}" class="image-update-input w-full px-3 py-2 border border-gray-300 rounded focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none text-sm text-gray-700 bg-gray-50 hover:bg-white transition" placeholder="Paste image URL here...">
+                    </div>
                 `;
                 imageLinksList.appendChild(row);
             });
@@ -224,15 +234,15 @@
             inputs.forEach(input => {
                 const newVal = input.value.trim();
                 const oldVal = input.dataset.original;
+                // Only replace if the user actually changed the value in the input box
                 if (newVal && newVal !== oldVal) {
-                    // Replace the specific old source with the new one
                     html = html.split(`src="${oldVal}"`).join(`src="${newVal}"`);
                     count++;
                 }
             });
 
             htmlInput.value = html;
-            alert(`Updated ${count} image links in the code!`);
+            alert(`Updated ${count} image link(s) in the code!`);
             imageManager.classList.add('hidden');
         });
 
