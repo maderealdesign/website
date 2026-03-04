@@ -22,6 +22,8 @@
         .hidden { display: none !important; }
         textarea { font-family: monospace; }
         .img-link-row:nth-child(even) { background-color: #f9fafb; }
+        /* Smooth transition for auto-fill highlight */
+        .image-update-input { transition: all 0.3s ease; }
     </style>
 </head>
 <body class="text-black h-screen flex flex-col">
@@ -89,6 +91,16 @@
                         <h3 class="text-sm font-black text-teal-800 uppercase tracking-widest">Image Link Manager</h3>
                         <span id="imgCount" class="text-xs font-bold bg-brand-teal text-white px-2 py-1 rounded">0 Found</span>
                     </div>
+                    
+                    <!-- BULK PASTE SECTION ADDED HERE -->
+                    <div class="p-4 bg-white border-b border-brand-teal/10">
+                        <label class="block text-[11px] font-black text-gray-500 uppercase tracking-widest mb-2">Bulk Paste Links</label>
+                        <textarea id="bulkPasteArea" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-brand-teal text-xs bg-gray-50 h-24 mb-2" placeholder="Paste your generated URLs here (one per line)..."></textarea>
+                        <button id="autoFillBtn" class="w-full bg-gray-800 text-white py-2 rounded-lg text-sm font-bold hover:bg-black transition shadow-sm">
+                            <i class="fas fa-magic mr-2"></i> Auto-Fill Inputs Below
+                        </button>
+                    </div>
+
                     <div id="imageLinksList" class="max-h-[400px] overflow-y-auto p-2 space-y-2">
                         <!-- JS will inject image rows here -->
                     </div>
@@ -144,6 +156,10 @@
         const imageManager = document.getElementById('imageManager');
         const imageLinksList = document.getElementById('imageLinksList');
         const saveBtn = document.getElementById('saveBtn');
+        
+        // New elements
+        const bulkPasteArea = document.getElementById('bulkPasteArea');
+        const autoFillBtn = document.getElementById('autoFillBtn');
 
         let isEditing = false;
         let originalSlug = "";
@@ -197,6 +213,8 @@
 
             if (images.length === 0) return alert("No images found in the code.");
 
+            // Reset bulk paste area
+            bulkPasteArea.value = '';
             imageLinksList.innerHTML = '';
             document.getElementById('imgCount').textContent = `${images.length} Found`;
             
@@ -224,6 +242,42 @@
             });
 
             imageManager.classList.remove('hidden');
+        });
+
+        // BULK AUTO-FILL LOGIC
+        autoFillBtn.addEventListener('click', () => {
+            const pastedText = bulkPasteArea.value;
+            
+            // Split by line breaks, trim spaces, and remove any empty lines
+            const newUrls = pastedText.split('\n')
+                                      .map(url => url.trim())
+                                      .filter(url => url.length > 0);
+
+            if (newUrls.length === 0) {
+                return alert("Please paste at least one valid URL in the bulk text area.");
+            }
+
+            const inputs = document.querySelectorAll('.image-update-input');
+            let updatedCount = 0;
+
+            inputs.forEach((input, index) => {
+                // If we have a matching URL in our array for this index
+                if (index < newUrls.length) {
+                    input.value = newUrls[index];
+                    updatedCount++;
+                    
+                    // Briefly flash the input green to show it was updated
+                    input.classList.add('bg-teal-50', 'border-brand-teal');
+                    setTimeout(() => {
+                        input.classList.remove('bg-teal-50', 'border-brand-teal');
+                    }, 800);
+                }
+            });
+
+            alert(`Auto-filled ${updatedCount} image field(s)! Review them below and click "Apply New Links to Code" when ready.`);
+            
+            // Optionally clear the text area after successful fill
+            // bulkPasteArea.value = ''; 
         });
 
         document.getElementById('applyLinksBtn').addEventListener('click', () => {
