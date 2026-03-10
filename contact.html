@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact MadeReal | Colne & Pendle</title>
+    <meta name="description" content="Get in touch with MadeReal in Colne. Fast, affordable web design and print services for local tradesmen.">
+    <link rel="canonical" href="https://madereal.uk/contact.html" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], },
+                    colors: {
+                        brand: { black: '#0f172a', teal: '#00D2A0', gray: '#f8fafc', dark: '#020617' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; background-color: #f8fafc; }
+        #mobile-menu { transition: max-height 0.3s ease-in-out; max-height: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 400px; }
+        .hero-pattern { background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
+</head>
+<body class="text-brand-black">
+
+    <!-- FULL NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" class="flex items-center gap-1">
+                    <span class="text-2xl font-black tracking-tight text-brand-black">made<span class="text-brand-teal">real</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/websites.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Websites</a>
+                    <a href="/print-and-signage.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Print & Signs</a>
+                    <a href="/portfolio.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Our Work</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="hidden md:inline-flex bg-brand-black text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-gray-800 transition shadow-sm">
+                        Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-600 text-2xl focus:outline-none"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 px-4">
+            <div class="py-4 space-y-4">
+                <a href="/websites.html" class="block text-gray-800 font-semibold">Websites (£197)</a>
+                <a href="/print-and-signage.html" class="block text-gray-800 font-semibold">Print & Signage</a>
+                <a href="/portfolio.html" class="block text-gray-800 font-semibold">Our Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTACT HERO & GRID -->
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 hero-pattern min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-7xl font-black tracking-tight text-brand-dark mb-4">Let's talk.</h1>
+                <p class="text-xl text-gray-600 font-medium">Ready to get your trade business online or order some print?</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-200">
+                
+                <!-- Contact Info Side -->
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-3xl font-black mb-8 text-brand-dark">Get in touch</h2>
+                    
+                    <div class="space-y-8 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-teal-50 text-brand-teal flex items-center justify-center text-xl shrink-0"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">WhatsApp Us (Fastest)</h4>
+                                <p class="text-gray-500 text-sm mb-2">We reply instantly during business hours.</p>
+                                <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="text-brand-teal font-bold hover:underline">Message 07396 710 347</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-50 text-gray-600 flex items-center justify-center text-xl shrink-0"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email Us</h4>
+                                <p class="text-gray-500 text-sm mb-2">Send over your logos or specific job details.</p>
+                                <a href="mailto:info@made-real.co.uk" class="text-brand-teal font-bold hover:underline">info@made-real.co.uk</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-50 text-gray-600 flex items-center justify-center text-xl shrink-0"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Our Location</h4>
+                                <p class="text-gray-500 text-sm">9 Market St, Colne<br>BB8 0HY, Lancashire</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="block w-full text-center bg-brand-black text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-dark transition-all">
+                        Start WhatsApp Chat
+                    </a>
+                </div>
+
+                <!-- Faux Map Side -->
+                <div class="bg-gray-100 relative min-h-[300px] md:min-h-full">
+                    <!-- A stylized representation of a map for aesthetic purposes, avoiding complex iframe loading issues -->
+                    <div class="absolute inset-0 bg-[url('https://placehold.co/800x800/e2e8f0/94a3b8?text=Map+of+Colne')] bg-cover bg-center opacity-50 mix-blend-multiply"></div>
+                    <div class="absolute inset-0 bg-brand-teal/10"></div>
+                    
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center animate-bounce">
+                        <div class="bg-white p-3 rounded-xl shadow-xl mb-2 text-center border border-gray-100">
+                            <div class="text-sm font-black text-gray-900">MadeReal HQ</div>
+                            <div class="text-xs text-brand-teal font-bold mt-1">Colne, Pendle</div>
+                        </div>
+                        <i class="fas fa-map-marker-alt text-5xl text-brand-black drop-shadow-md"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

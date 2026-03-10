@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ADVANCED SEO FOUNDATION -->
+    <title>Web Design for Tradesmen in Lancashire | No Monthly Fees | MadeReal</title>
+    <meta name="description" content="Professional websites for UK tradesmen for a one-off £197. Zero monthly fees. We build sites for plumbers, builders, and electricians in Colne, Pendle & Lancashire.">
+    <meta name="keywords" content="web design for tradesmen, plumber website builder, builder web design, no monthly fee websites, web design colne, web design pendle, trade print services">
+    <link rel="canonical" href="https://madereal.uk/" />
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Social Share (Open Graph) -->
+    <meta property="og:title" content="MadeReal | The Tradesman's Web Partner">
+    <meta property="og:description" content="Get your trade business online for £197. Zero monthly fees. Live in 48 hours.">
+    <meta property="og:image" content="images/social-share.jpg">
+    <meta property="og:url" content="https://madereal.uk">
+    <meta property="og:type" content="website">
+
+    <!-- ADVANCED SCHEMA MARKUP (LocalBusiness + FAQ) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MadeReal Design & Print",
+        "image": "images/social-share.jpg",
+        "@id": "https://madereal.uk",
+        "url": "https://madereal.uk",
+        "telephone": "07396710347",
+        "priceRange": "£197",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9 Market St",
+          "addressLocality": "Colne",
+          "addressRegion": "Lancashire",
+          "postalCode": "BB8 0HY",
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.8549,
+          "longitude": -2.1388
+        },
+        "areaServed": ["Colne", "Nelson", "Barnoldswick", "Pendle", "Lancashire"],
+        "sameAs": ["https://wa.me/message/6KIH4X5JNMV7F1"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How are there zero monthly fees?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We build on platforms that don't charge hosting fees. You own the site outright. You only pay roughly £10 a year for your domain name renewal (e.g., yourname.co.uk)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to build a tradesman website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Once you send us your details and photos, your website will be live and ready to generate leads within 48 hours."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0f172a',
+                            teal: '#00D2A0',
+                            gray: '#f8fafc',
+                            dark: '#020617'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'glow': '0 0 20px rgba(0, 210, 160, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        
+        /* Animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Mobile Menu */
+        #mobile-menu { transition: max-height 0.3s ease-in-out; max-height: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 400px; }
+
+        /* Accordion */
+        .faq-answer { transition: max-height 0.3s ease-in-out, padding 0.3s ease; max-height: 0; overflow: hidden; }
+        .faq-item.active .faq-answer { max-height: 200px; padding-bottom: 1rem; }
+        .faq-item.active .fa-chevron-down { transform: rotate(180deg); }
+
+        /* Custom Gradients & Shapes */
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed; bottom: 24px; right: 24px; background-color: #25D366; color: white;
+            border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+            font-size: 32px; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .floating-whatsapp:hover { transform: scale(1.1) translateY(-5px); }
+    </style>
+</head>
+<body class="bg-brand-gray text-brand-black">
+
+    <!-- FULL NAVIGATION BARD (SEO Friendly) -->
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/" aria-label="Home" class="flex items-center gap-1">
+                    <span class="text-2xl font-black tracking-tight text-brand-black">made<span class="text-brand-teal">real</span></span>
+                </a>
+
+                <!-- Desktop Menu (Links to your future pages) -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative group">
+                        <button class="text-gray-600 font-semibold hover:text-brand-teal transition flex items-center gap-1">
+                            Who We Help <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <!-- Dropdown -->
+                        <div class="absolute top-full left-0 w-48 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="/websites-for-plumbers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Plumbers & Gas</a>
+                            <a href="/websites-for-builders.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Builders & Roofers</a>
+                            <a href="/websites-for-electricians.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Electricians</a>
+                            <a href="/websites-for-landscapers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Landscapers</a>
+                        </div>
+                    </div>
+                    <a href="/websites.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Websites</a>
+                    <a href="/print-and-signage.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Print & Signs</a>
+                    <a href="/portfolio.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Our Work</a>
+                </div>
+
+                <!-- CTA & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="hidden md:inline-flex bg-brand-black text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-gray-800 transition shadow-sm">
+                        Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-600 text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 px-4">
+            <div class="py-4 space-y-4">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Services</p>
+                <a href="/websites.html" class="block text-gray-800 font-semibold">Websites (£197)</a>
+                <a href="/print-and-signage.html" class="block text-gray-800 font-semibold">Print & Signage</a>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-4">Trades We Help</p>
+                <a href="/websites-for-plumbers.html" class="block text-gray-800 font-semibold">Plumbers</a>
+                <a href="/websites-for-builders.html" class="block text-gray-800 font-semibold">Builders</a>
+                <a href="/websites-for-electricians.html" class="block text-gray-800 font-semibold">Electricians</a>
+                <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="block text-center bg-brand-black text-white px-4 py-3 rounded-xl font-bold mt-4">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Benefit Driven) -->
+    <header class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 hero-pattern overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="md:w-3/5 text-center md:text-left z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-6">
+                    <div class="flex text-[#00b67a] text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <span class="text-sm font-bold text-gray-700">5.0 on Trustpilot</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.05] text-brand-dark mb-6">
+                    Trade websites.<br>
+                    <span class="text-brand-teal relative inline-block">
+                        Zero monthly fees.
+                        <svg class="absolute w-full h-3 -bottom-1 left-0 text-brand-teal opacity-30" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="transparent"/></svg>
+                    </span>
+                </h1>
+                
+                <p class="text-lg md:text-2xl text-gray-600 font-medium mb-10 max-w-2xl leading-relaxed">
+                    Stop paying web agencies £50/month to "host" your site. Get a professional, Google-ready website built for your trade for a <strong class="text-brand-black">one-off £197</strong>.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a href="https://buy.stripe.com/9B614m5Q98Vs7FydnT0ZW0d" class="w-full sm:w-auto text-center bg-brand-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-dark transition-all shadow-xl hover:-translate-y-1">
+                        Start Your Build — £197
+                    </a>
+                    <a href="#how-it-works" class="w-full sm:w-auto text-center bg-white border border-gray-200 px-8 py-4 rounded-full font-bold text-lg text-gray-700 hover:bg-gray-50 transition-all">
+                        How it works
+                    </a>
+                </div>
+                
+                <p class="mt-6 text-sm font-medium text-gray-500 flex items-center justify-center md:justify-start gap-2">
+                    <i class="fas fa-check-circle text-brand-teal"></i> Live in 48 Hours
+                    <i class="fas fa-check-circle text-brand-teal ml-3"></i> Based in Colne, Lancashire
+                </p>
+            </div>
+
+            <!-- Visual Hook -->
+            <div class="md:w-2/5 relative reveal w-full max-w-md mx-auto">
+                <div class="absolute inset-0 bg-brand-teal rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                <div class="bg-white rounded-[2rem] border-8 border-gray-100 shadow-2xl relative z-10 overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <!-- Faux Browser Header -->
+                    <div class="bg-gray-100 py-3 px-4 flex items-center gap-2 border-b border-gray-200">
+                        <div class="w-3 h-3 rounded-full bg-red-400"></div><div class="w-3 h-3 rounded-full bg-yellow-400"></div><div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        <div class="mx-auto bg-white text-[10px] text-gray-400 font-mono px-4 py-1 rounded-full flex items-center gap-2">
+                            <i class="fas fa-lock"></i> yourtrade.co.uk
+                        </div>
+                    </div>
+                    <!-- Faux Website Content -->
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="font-black text-xl tracking-tighter">Pro<span class="text-blue-600">Plumb</span></div>
+                            <div class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full animate-pulse">Online Now</div>
+                        </div>
+                        <h3 class="text-2xl font-black leading-tight mb-2">Emergency Plumber in Pendle</h3>
+                        <p class="text-xs text-gray-500 mb-6">Gas Safe registered. Available 24/7.</p>
+                        <div class="bg-brand-black text-white text-center py-3 rounded-xl font-bold shadow-md mb-4 flex items-center justify-center gap-2">
+                            <i class="fas fa-phone-alt"></i> Call 07700 900000
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-4">
+                            <div class="h-20 bg-gray-100 rounded-lg"></div>
+                            <div class="h-20 bg-gray-100 rounded-lg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- NEW LOGO BAR: Trust & Authority -->
+    <section class="border-y border-gray-200 bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Trusted by local trades in</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-xl md:text-2xl font-black text-gray-300">
+                <span>COLNE</span>
+                <span>NELSON</span>
+                <span>BURNLEY</span>
+                <span>SKIPTON</span>
+                <span>PENDLE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT LAUNCHES (Portfolio) -->
+    <section class="py-20 px-6 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-teal-50 text-brand-teal text-sm font-bold uppercase tracking-widest mb-4">Recent Launches</span>
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight text-brand-dark">Built for local trades.</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <!-- Portfolio Item 1 -->
+                <a href="https://madereal.uk/rbc" target="_blank" rel="noopener noreferrer" class="group relative rounded-3xl overflow-hidden aspect-square flex items-center justify-center bg-gray-100 border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <img src="images/portfolio-1-bg.jpg" alt="RBC Website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-brand-teal/10 transition-colors duration-500"></div>
+                    <img src="images/portfolio-1-logo.png" alt="RBC Client Logo" loading="lazy" class="relative z-10 w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg transform group-hover:-translate-y-4 transition-transform duration-500">
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                        <span class="bg-white text-brand-black text-xs md:text-sm font-bold px-4 py-2 rounded-full shadow-lg whitespace-nowrap">View Website</span>
+                    </div>
+                </a>
+
+                <!-- Portfolio Item 2 -->
+                <a href="https://madereal.uk/pro-fencing" target="_blank" rel="noopener noreferrer" class="group relative rounded-3xl overflow-hidden aspect-square flex items-center justify-center bg-gray-100 border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <img src="images/portfolio-2-bg.jpg" alt="Pro Fencing Website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-brand-teal/10 transition-colors duration-500"></div>
+                    <img src="images/portfolio-2-logo.png" alt="Pro Fencing Client Logo" loading="lazy" class="relative z-10 w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg transform group-hover:-translate-y-4 transition-transform duration-500">
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                        <span class="bg-white text-brand-black text-xs md:text-sm font-bold px-4 py-2 rounded-full shadow-lg whitespace-nowrap">View Website</span>
+                    </div>
+                </a>
+
+                <!-- Portfolio Item 3 -->
+                <a href="https://nsplastering.co.uk/" target="_blank" rel="noopener noreferrer" class="group relative rounded-3xl overflow-hidden aspect-square flex items-center justify-center bg-gray-100 border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <img src="images/portfolio-3-bg.jpg" alt="NS Plastering Website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-brand-teal/10 transition-colors duration-500"></div>
+                    <img src="images/portfolio-3-logo.png" alt="NS Plastering Client Logo" loading="lazy" class="relative z-10 w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg transform group-hover:-translate-y-4 transition-transform duration-500">
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                        <span class="bg-white text-brand-black text-xs md:text-sm font-bold px-4 py-2 rounded-full shadow-lg whitespace-nowrap">View Website</span>
+                    </div>
+                </a>
+
+                <!-- Portfolio Item 4 -->
+                <a href="https://tcjoinerbuilder.co.uk/" target="_blank" rel="noopener noreferrer" class="group relative rounded-3xl overflow-hidden aspect-square flex items-center justify-center bg-gray-100 border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <img src="images/portfolio-4-bg.jpg" alt="TC Joiner Builder Website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-brand-teal/10 transition-colors duration-500"></div>
+                    <img src="images/portfolio-4-logo.png" alt="TC Joiner Builder Client Logo" loading="lazy" class="relative z-10 w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg transform group-hover:-translate-y-4 transition-transform duration-500">
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                        <span class="bg-white text-brand-black text-xs md:text-sm font-bold px-4 py-2 rounded-full shadow-lg whitespace-nowrap">View Website</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SILO ARCHITECTURE: Trades Section (Massive for SEO) -->
+    <section class="py-20 bg-brand-gray px-4">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-4">Built for your specific trade.</h2>
+                <p class="text-gray-600 text-lg">We don't do generic. We build websites designed to get your specific phone ringing.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <!-- Trade 1 -->
+                <a href="/websites-for-plumbers.html" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-blue-200 transition-all group text-center">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Plumbers & Gas</h3>
+                </a>
+                <!-- Trade 2 -->
+                <a href="/websites-for-builders.html" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:orange-200 transition-all group text-center">
+                    <div class="w-16 h-16 mx-auto bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Builders & Roofers</h3>
+                </a>
+                <!-- Trade 3 -->
+                <a href="/websites-for-electricians.html" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:yellow-200 transition-all group text-center">
+                    <div class="w-16 h-16 mx-auto bg-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Electricians</h3>
+                </a>
+                <!-- Trade 4 -->
+                <a href="/websites-for-landscapers.html" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl hover:green-200 transition-all group text-center">
+                    <div class="w-16 h-16 mx-auto bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-gray-900">Landscapers</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM VS SOLUTION -->
+    <section class="py-20 md:py-32 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+                
+                <div class="md:w-1/2 reveal">
+                    <span class="text-brand-teal font-bold tracking-widest uppercase text-sm mb-2 block">The Dirty Secret</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-brand-dark mb-6 leading-tight">Stop renting your website.</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Most web agencies hook you with a "cheap" setup, then charge you £30-£60 every single month for "hosting and maintenance." Over two years, that's £1,400+ out of your pocket.
+                    </p>
+                    <p class="text-lg font-bold text-brand-black mb-8">
+                        We don't do that. You pay once. You own it forever.
+                    </p>
+                    
+                    <ul class="space-y-4 font-medium text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fas fa-times-circle text-red-500 text-xl"></i> No £50/month retainers</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-times-circle text-red-500 text-xl"></i> No hidden "maintenance" bills</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check-circle text-brand-teal text-xl"></i> Built on free, lightning-fast global servers</li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/2 w-full reveal">
+                    <div class="bg-gray-50 rounded-[2rem] p-8 border border-gray-200 relative">
+                        <!-- Vs Badge -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-12 h-12 rounded-full flex items-center justify-center font-black text-gray-400 shadow-sm border border-gray-100 z-10">VS</div>
+                        
+                        <!-- Them -->
+                        <div class="bg-white rounded-2xl p-6 shadow-sm border border-red-100 mb-4 opacity-70">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-bold text-gray-800">Typical Agency</span>
+                                <span class="text-xs font-bold text-red-500 bg-red-50 px-2 py-1 rounded">Monthly Trap</span>
+                            </div>
+                            <div class="text-3xl font-black text-gray-400 line-through">£1,440</div>
+                            <div class="text-sm text-gray-500 mt-1">Cost over 2 years (£60/month)</div>
+                        </div>
+
+                        <!-- Us -->
+                        <div class="bg-white rounded-2xl p-6 shadow-xl border-2 border-brand-teal transform scale-105">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-bold text-brand-dark">MadeReal Partner</span>
+                                <span class="text-xs font-bold text-brand-teal bg-teal-50 px-2 py-1 rounded">One-Off Fee</span>
+                            </div>
+                            <div class="text-4xl font-black text-brand-teal">£197</div>
+                            <div class="text-sm font-bold text-brand-dark mt-1">You own it forever.</div>
+                            <p class="text-xs text-gray-400 mt-2">*You only pay £9/year for your domain name (e.g. yourname.co.uk).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE REVIEWS SECTION (Social Proof) -->
+    <section class="py-20 bg-brand-gray px-4 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-16">
+                <div class="flex justify-center text-yellow-400 text-3xl mb-4 gap-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark mb-4">Don't just take our word for it.</h2>
+                <p class="text-gray-600 text-lg">Real reviews from real Lancashire businesses we've worked with.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Review 1: RBC Surfacing -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-lg">R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 leading-tight">RBC Surfacing LTD</h4>
+                            <div class="text-xs text-gray-500 mt-1">1 review • a month ago</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">"From start to finish, Made Real Design and Print provided outstanding service. They took the time to understand our brand, offered creative ideas, and made revisions quickly... The final logo looks fantastic. We’ll definitely work with them again."</p>
+                    <div class="mt-4 pt-4 border-t border-gray-50 text-right"><i class="fab fa-google text-gray-300 text-xl"></i></div>
+                </div>
+
+                <!-- Review 2: Blaine Higgins -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold text-lg">B</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 leading-tight">Blaine Higgins</h4>
+                            <div class="text-xs text-gray-500 mt-1">Local Guide • 3 months ago</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">"Used this company a few times now for logos, then upgraded the logo when we changed direction of the business. Also had advertisements, business cards and leaflets which were all to a high quality. Good service overall... no complaints."</p>
+                    <div class="mt-4 pt-4 border-t border-gray-50 text-right"><i class="fab fa-google text-gray-300 text-xl"></i></div>
+                </div>
+
+                <!-- Review 3: Ashley Sutcliffe -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-lg">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 leading-tight">Ashley Sutcliffe</h4>
+                            <div class="text-xs text-gray-500 mt-1">12 reviews • 3 months ago</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">"I’ve known Dom for years so when I needed some fast turnaround design work, it was a no brainer. Totally got what I wanted, delivered on time and at a great price. Highly recommend"</p>
+                    <div class="mt-4 pt-4 border-t border-gray-50 text-right"><i class="fab fa-google text-gray-300 text-xl"></i></div>
+                </div>
+
+                <!-- Review 4: Ross Walker -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-lg">R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 leading-tight">Ross Walker</h4>
+                            <div class="text-xs text-gray-500 mt-1">9 reviews • 3 months ago</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-600 text-sm leading-relaxed flex-grow">"Top job on sorting logo and new website for my business. Great vision in deciding on how it all should look just going off my business name, would definitely recommend"</p>
+                    <div class="mt-4 pt-4 border-t border-gray-50 text-right"><i class="fab fa-google text-gray-300 text-xl"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: THE BUNDLE OFFER (Upsell Strategy) -->
+    <section class="py-20 bg-brand-black text-white px-4 relative overflow-hidden">
+        <!-- Background accents -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-teal rounded-full blur-[120px] opacity-20"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10 reveal">
+            <div class="text-center mb-12">
+                <span class="bg-brand-teal text-brand-black text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block">Most Popular</span>
+                <h2 class="text-4xl md:text-5xl font-black mb-4">The Pendle Start-Up Bundle</h2>
+                <p class="text-gray-400 text-lg">Everything a tradesman needs to look professional on day one.</p>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-[2rem] p-8 md:p-12 backdrop-blur-sm md:flex items-center gap-12">
+                <div class="md:w-1/2 mb-8 md:mb-0 space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-teal/20 text-brand-teal flex items-center justify-center shrink-0"><i class="fas fa-laptop"></i></div>
+                        <div><h4 class="font-bold text-xl">1. The Pro Website</h4><p class="text-gray-400 text-sm">Fully built, Google-ready, zero monthly fees.</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-teal/20 text-brand-teal flex items-center justify-center shrink-0"><i class="fas fa-id-card"></i></div>
+                        <div><h4 class="font-bold text-xl">2. 500x Business Cards</h4><p class="text-gray-400 text-sm">Premium 450gsm laminated finish, double-sided.</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-teal/20 text-brand-teal flex items-center justify-center shrink-0"><i class="fas fa-truck"></i></div>
+                        <div><h4 class="font-bold text-xl">3. A3 Van Magnets (Pair)</h4><p class="text-gray-400 text-sm">Motorway grade, full color, slap them on your van.</p></div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white rounded-3xl p-8 text-center shadow-2xl transform md:scale-110 relative border-4 border-brand-teal">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-teal text-brand-black font-bold text-sm px-4 py-1 rounded-full">Save £20</div>
+                    <p class="text-gray-500 font-bold uppercase tracking-wider text-sm mb-2">Total Package</p>
+                    <div class="text-5xl font-black text-brand-black mb-2">£299</div>
+                    <p class="text-gray-400 text-sm mb-8 line-through">Bought separately: £319</p>
+                    <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="block w-full bg-brand-black text-white py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition shadow-lg">
+                        Order The Bundle via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS (Timeline) -->
+    <section id="how-it-works" class="py-20 md:py-32 bg-brand-gray px-4">
+        <div class="max-w-4xl mx-auto reveal">
+            <h2 class="text-3xl md:text-5xl font-black text-center mb-16 text-brand-dark">Live in 48 Hours.</h2>
+            
+            <div class="relative border-l-4 border-brand-teal/30 ml-6 md:ml-12 space-y-12">
+                
+                <div class="relative pl-10 md:pl-16">
+                    <div class="absolute -left-[22px] top-0 w-10 h-10 rounded-full bg-white border-4 border-brand-teal flex items-center justify-center font-bold text-brand-dark shadow-sm">1</div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Message & Payment</h3>
+                    <p class="text-gray-600">Send us a WhatsApp or checkout online. We'll reply instantly to grab your business name, services, and logo (if you have one).</p>
+                </div>
+                
+                <div class="relative pl-10 md:pl-16">
+                    <div class="absolute -left-[22px] top-0 w-10 h-10 rounded-full bg-white border-4 border-brand-teal flex items-center justify-center font-bold text-brand-dark shadow-sm">2</div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">We Build & Optimize</h3>
+                    <p class="text-gray-600">You get on with your job. We spend the next 24-48 hours building the site, writing the content, and optimizing it for local Google searches in your area.</p>
+                </div>
+
+                <div class="relative pl-10 md:pl-16">
+                    <div class="absolute -left-[22px] top-0 w-10 h-10 rounded-full bg-brand-teal border-4 border-brand-teal flex items-center justify-center font-bold text-white shadow-glow"><i class="fas fa-check"></i></div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Review & Go Live</h3>
+                    <p class="text-gray-600">We send you a private link to view the site. If you love it, we connect your domain name and set up your Google Business Profile. You are online.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO FAQ SECTION -->
+    <section class="py-20 bg-white px-4 border-t border-gray-100">
+        <div class="max-w-3xl mx-auto reveal">
+            <h2 class="text-3xl md:text-5xl font-black text-center mb-12 text-brand-dark">Straight answers.</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-5 text-left font-bold text-lg text-brand-dark flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        What is the catch with "Zero Monthly Fees"?
+                        <i class="fas fa-chevron-down text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        There is no catch. Most agencies use heavy platforms like WordPress and charge you £50/m to "update plugins." We hand-code our sites or use modern, serverless platforms that offer generous free hosting tiers. We pass those savings to you. You only pay roughly £10 a year directly to a registrar (like GoDaddy or Namecheap) for your actual domain name (yourname.co.uk).
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-5 text-left font-bold text-lg text-brand-dark flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        Do I show up on Google?
+                        <i class="fas fa-chevron-down text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        Yes. We build the site using modern local SEO practices (Schema markup, optimized headings, and fast load times). We also help you configure your Google Business Profile, which is how you show up on the map pack when someone searches "plumber near me."
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-gray-200 rounded-2xl overflow-hidden bg-gray-50">
+                    <button class="w-full px-6 py-5 text-left font-bold text-lg text-brand-dark flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        What if I need updates later?
+                        <i class="fas fa-chevron-down text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-6 text-gray-600">
+                        Need to change a phone number or add some new gallery photos in 6 months? Just drop us a WhatsApp. Minor text/image tweaks are free. For major structural changes or adding whole new pages, we just charge a small, fair hourly rate.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (SEO Expanded) -->
+    <footer class="bg-brand-dark text-white pt-20 pb-10 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            
+            <div class="md:col-span-1">
+                <a href="/" class="text-2xl font-black tracking-tight inline-block mb-4 text-white">made<span class="text-brand-teal">real</span></a>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">No-nonsense web design and print services for tradesmen who want the phone to ring without the monthly subscription trap.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-teal transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-teal transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-4">Our Services</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li><a href="/websites.html" class="hover:text-brand-teal transition">Tradesman Websites (£197)</a></li>
+                    <li><a href="/print-and-signage.html" class="hover:text-brand-teal transition">Business Cards & Flyers</a></li>
+                    <li><a href="/print-and-signage.html" class="hover:text-brand-teal transition">Van Graphics & Magnets</a></li>
+                    <li><a href="/logo-design.html" class="hover:text-brand-teal transition">Logo Design</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-4">Who We Help</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li><a href="/websites-for-plumbers.html" class="hover:text-brand-teal transition">Websites for Plumbers</a></li>
+                    <li><a href="/websites-for-builders.html" class="hover:text-brand-teal transition">Websites for Builders</a></li>
+                    <li><a href="/websites-for-electricians.html" class="hover:text-brand-teal transition">Websites for Electricians</a></li>
+                    <li><a href="/websites-for-landscapers.html" class="hover:text-brand-teal transition">Websites for Landscapers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-brand-teal"></i> <span>9 Market St, Colne<br>BB8 0HY, Lancashire</span></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-brand-teal"></i> <span>07396 710 347</span></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-envelope text-brand-teal"></i> <span>info@made-real.co.uk</span></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-gray-800 pt-8 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 MadeReal. Designed & Built in Colne.</p>
+            <p>Proudly serving Colne, Nelson, Barnoldswick, Skipton & Burnley.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/message/6KIH4X5JNMV7F1" aria-label="Chat on WhatsApp" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts for Interactions -->
+    <script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100; 
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        document.addEventListener("DOMContentLoaded", reveal);
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            var icon = this.querySelector('i');
+            menu.classList.toggle('open');
+            if (menu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // FAQ Toggle
+        function toggleFaq(button) {
+            var item = button.parentElement;
+            // Close others
+            document.querySelectorAll('.faq-item').forEach(function(el) {
+                if(el !== item) el.classList.remove('active');
+            });
+            // Toggle current
+            item.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

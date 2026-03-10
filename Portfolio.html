@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ADVANCED SEO FOUNDATION -->
+    <title>Our Work | Tradesman Website Portfolio | MadeReal</title>
+    <meta name="description" content="View our recent web design projects for tradesmen across Lancashire. See the quality of our £197 website builds.">
+    <meta name="keywords" content="tradesman website examples, web design portfolio lancashire, plumber website examples, builder website portfolio">
+    <link rel="canonical" href="https://madereal.uk/portfolio.html" />
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Social Share (Open Graph) -->
+    <meta property="og:title" content="Our Work | MadeReal Portfolio">
+    <meta property="og:description" content="Check out the high-quality, lead-generating websites we've built for local tradesmen.">
+    <meta property="og:image" content="images/social-share.jpg">
+    <meta property="og:url" content="https://madereal.uk/portfolio.html">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0f172a',
+                            teal: '#00D2A0',
+                            gray: '#f8fafc',
+                            dark: '#020617'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'glow': '0 0 20px rgba(0, 210, 160, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        
+        /* Animations */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Mobile Menu */
+        #mobile-menu { transition: max-height 0.3s ease-in-out; max-height: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 400px; }
+
+        /* Custom Gradients & Shapes */
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed; bottom: 24px; right: 24px; background-color: #25D366; color: white;
+            border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+            font-size: 32px; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .floating-whatsapp:hover { transform: scale(1.1) translateY(-5px); }
+    </style>
+</head>
+<body class="bg-brand-gray text-brand-black">
+
+    <!-- FULL NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/" aria-label="Home" class="flex items-center gap-1">
+                    <span class="text-2xl font-black tracking-tight text-brand-black">made<span class="text-brand-teal">real</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div class="relative group">
+                        <button class="text-gray-600 font-semibold hover:text-brand-teal transition flex items-center gap-1">
+                            Who We Help <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <!-- Dropdown -->
+                        <div class="absolute top-full left-0 w-48 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="/websites-for-plumbers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Plumbers & Gas</a>
+                            <a href="/websites-for-builders.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Builders & Roofers</a>
+                            <a href="/websites-for-electricians.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Electricians</a>
+                            <a href="/websites-for-landscapers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-teal">Landscapers</a>
+                        </div>
+                    </div>
+                    <a href="/websites.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Websites</a>
+                    <a href="/print-and-signage.html" class="text-gray-600 font-semibold hover:text-brand-teal transition">Print & Signs</a>
+                    <a href="/portfolio.html" class="text-brand-teal font-bold transition">Our Work</a>
+                </div>
+
+                <!-- CTA & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="hidden md:inline-flex bg-brand-black text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-gray-800 transition shadow-sm">
+                        Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-600 text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 px-4">
+            <div class="py-4 space-y-4">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Services</p>
+                <a href="/websites.html" class="block text-gray-800 font-semibold">Websites (£197)</a>
+                <a href="/print-and-signage.html" class="block text-gray-800 font-semibold">Print & Signage</a>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-4">Trades We Help</p>
+                <a href="/websites-for-plumbers.html" class="block text-gray-800 font-semibold">Plumbers</a>
+                <a href="/websites-for-builders.html" class="block text-gray-800 font-semibold">Builders</a>
+                <a href="/websites-for-electricians.html" class="block text-gray-800 font-semibold">Electricians</a>
+                <a href="/websites-for-landscapers.html" class="block text-gray-800 font-semibold">Landscapers</a>
+                <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="block text-center bg-brand-black text-white px-4 py-3 rounded-xl font-bold mt-4">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-32 pb-16 md:pt-48 md:pb-24 px-4 bg-white border-b border-gray-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-teal-50 text-brand-teal text-sm font-bold uppercase tracking-widest mb-4">Our Portfolio</span>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight text-brand-dark mb-6">Recent Launches.</h1>
+            <p class="text-xl text-gray-500 font-medium">Browse some of the £197 websites we've recently built for tradesmen across Lancashire.</p>
+        </div>
+    </header>
+
+    <!-- PORTFOLIO GRID -->
+    <section class="py-20 px-4 bg-brand-gray">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="group relative rounded-[2rem] overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="aspect-[4/3] relative overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <img src="images/portfolio-1-bg.jpg" alt="RBC Surfacing Website" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <img src="images/portfolio-1-logo.png" alt="RBC Logo" class="relative z-10 w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl">
+                    </div>
+                    <div class="p-8 flex justify-between items-center bg-white relative z-20">
+                        <div>
+                            <h3 class="text-2xl font-black text-brand-dark mb-1">RBC Surfacing LTD</h3>
+                            <p class="text-brand-teal font-bold text-sm uppercase tracking-wide">Groundworkers</p>
+                        </div>
+                        <a href="https://madereal.uk/rbc" target="_blank" class="w-12 h-12 rounded-full bg-gray-50 text-brand-dark flex items-center justify-center group-hover:bg-brand-teal group-hover:text-white transition-colors border border-gray-200 group-hover:border-brand-teal">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group relative rounded-[2rem] overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="aspect-[4/3] relative overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <img src="images/portfolio-2-bg.jpg" alt="Pro Fencing Website" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <img src="images/portfolio-2-logo.png" alt="Pro Fencing Logo" class="relative z-10 w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl">
+                    </div>
+                    <div class="p-8 flex justify-between items-center bg-white relative z-20">
+                        <div>
+                            <h3 class="text-2xl font-black text-brand-dark mb-1">Pro Fencing</h3>
+                            <p class="text-brand-teal font-bold text-sm uppercase tracking-wide">Fencing & Landscaping</p>
+                        </div>
+                        <a href="https://madereal.uk/pro-fencing" target="_blank" class="w-12 h-12 rounded-full bg-gray-50 text-brand-dark flex items-center justify-center group-hover:bg-brand-teal group-hover:text-white transition-colors border border-gray-200 group-hover:border-brand-teal">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="group relative rounded-[2rem] overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="aspect-[4/3] relative overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <img src="images/portfolio-3-bg.jpg" alt="NS Plastering Website" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <img src="images/portfolio-3-logo.png" alt="NS Plastering Logo" class="relative z-10 w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl">
+                    </div>
+                    <div class="p-8 flex justify-between items-center bg-white relative z-20">
+                        <div>
+                            <h3 class="text-2xl font-black text-brand-dark mb-1">NS Plastering</h3>
+                            <p class="text-brand-teal font-bold text-sm uppercase tracking-wide">Plastering & Rendering</p>
+                        </div>
+                        <a href="https://nsplastering.co.uk/" target="_blank" class="w-12 h-12 rounded-full bg-gray-50 text-brand-dark flex items-center justify-center group-hover:bg-brand-teal group-hover:text-white transition-colors border border-gray-200 group-hover:border-brand-teal">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="group relative rounded-[2rem] overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="aspect-[4/3] relative overflow-hidden bg-gray-100 flex items-center justify-center">
+                        <img src="images/portfolio-4-bg.jpg" alt="TC Joiner Builder Website" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <img src="images/portfolio-4-logo.png" alt="TC Joiner Builder Logo" class="relative z-10 w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl">
+                    </div>
+                    <div class="p-8 flex justify-between items-center bg-white relative z-20">
+                        <div>
+                            <h3 class="text-2xl font-black text-brand-dark mb-1">TC Joiner Builder</h3>
+                            <p class="text-brand-teal font-bold text-sm uppercase tracking-wide">Joinery & Construction</p>
+                        </div>
+                        <a href="https://tcjoinerbuilder.co.uk/" target="_blank" class="w-12 h-12 rounded-full bg-gray-50 text-brand-dark flex items-center justify-center group-hover:bg-brand-teal group-hover:text-white transition-colors border border-gray-200 group-hover:border-brand-teal">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-24 px-4 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h2 class="text-4xl md:text-6xl font-black mb-6 text-brand-dark">Want a site like these?</h2>
+            <p class="text-xl text-gray-600 mb-10 font-medium">Get your trade business online for just £197. Zero monthly fees.</p>
+            <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="inline-block bg-brand-black text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-800 transition-all shadow-xl hover:-translate-y-1">
+                Message Us to Start
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-white pt-20 pb-10 px-4">
+        <!-- Footer content consistent with other pages -->
+        <div class="max-w-7xl mx-auto text-center text-sm text-gray-500">
+            <p>&copy; 2026 MadeReal. Designed & Built in Colne.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/message/6KIH4X5JNMV7F1" aria-label="Chat on WhatsApp" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts for Interactions -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100; 
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        document.addEventListener("DOMContentLoaded", reveal);
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
