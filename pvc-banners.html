@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-50 antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Trade PVC Banners | MadeReal</title>
+    <meta name="description" content="Heavy-duty, weather-proof PVC banners for tradesmen and local businesses. Get an instant quote online.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            navy: '#1e3a8a',
+                            blue: '#2563eb',
+                            accent: '#fbbf24',
+                            green: '#2EC8A0' // Added your calculator's green
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html, body { overflow-x: hidden; scroll-behavior: smooth; }
+        #mobile-menu { transition: max-height 0.3s ease-in-out; max-height: 0; overflow: hidden; }
+        #mobile-menu.open { max-height: 600px; }
+        .group:hover .group-hover\:visible { visibility: visible; }
+        
+        /* Specific tweaks for the calculator inputs */
+        input[type="number"]::-webkit-inner-spin-button, 
+        input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type="number"] { -moz-appearance: textfield; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <div class="bg-brand-navy text-white py-2 px-4 text-sm font-semibold hidden sm:block">
+        <div class="max-w-7xl mx-auto flex justify-center md:justify-end items-center gap-6">
+            <span class="flex items-center gap-2"><i class="ph-fill ph-phone text-brand-accent"></i> Call Us: 07396 710 347</span>
+            <a href="https://wa.me/message/6KIH4X5JNMV7F1" target="_blank" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"><i class="ph-fill ph-whatsapp-logo"></i> Message us for a Free Preview</a>
+        </div>
+    </div>
+
+    <nav class="w-full bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-brand-blue text-white rounded-lg flex items-center justify-center font-black text-xl">M</div>
+                    <div>
+                        <span class="text-2xl font-black tracking-tight text-gray-900 block leading-none">MadeReal.</span>
+                        <span class="text-xs text-gray-500 font-semibold">Colne's Trade Web Designers</span>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-8 text-sm font-bold text-gray-600">
+                    <div class="relative group">
+                        <button class="hover:text-brand-blue transition-colors flex items-center gap-1 pb-2 -mb-2">
+                            Who We Help <i class="ph-bold ph-caret-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 w-48 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all mt-2">
+                            <a href="websites-for-plumbers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-blue">Plumbers & Gas</a>
+                            <a href="websites-for-builders.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-blue">Builders & Roofers</a>
+                            <a href="websites-for-electricians.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-blue">Electricians</a>
+                            <a href="websites-for-landscapers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-blue">Landscapers</a>
+                        </div>
+                    </div>
+                    <a href="websites.html" class="hover:text-brand-blue transition-colors">Websites</a>
+                    <a href="print-and-signage.html" class="text-brand-blue transition-colors">Print & Signs</a>
+                    <a href="portfolio.html" class="hover:text-brand-blue transition-colors">Our Work</a>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/message/6KIH4X5JNMV7F1" target="_blank" class="hidden lg:inline-flex bg-brand-blue text-white px-6 py-3 rounded-md text-sm font-bold hover:bg-blue-700 transition-colors shadow-md">
+                        Get a Free Preview
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden text-gray-900 text-3xl focus:outline-none">
+                        <i class="ph-bold ph-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-100 px-4">
+            <div class="py-4 space-y-4">
+                <a href="websites.html" class="block text-gray-800 font-semibold hover:text-brand-blue">Websites (£197)</a>
+                <a href="print-and-signage.html" class="block text-gray-800 font-semibold hover:text-brand-blue">Print & Signage</a>
+                <a href="pvc-banners.html" class="block text-brand-blue font-semibold">PVC Banners</a>
+                <a href="portfolio.html" class="block text-gray-800 font-semibold hover:text-brand-blue">Our Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-brand-navy py-16 sm:py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <p class="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">Site Graphics & Scaffolding</p>
+                <h1 class="text-5xl sm:text-6xl font-black text-white tracking-tight mb-6 leading-tight">
+                    Heavy-Duty <br>
+                    <span class="text-blue-300">PVC Banners.</span>
+                </h1>
+                <p class="text-xl font-medium text-gray-200 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Trade-tough, fully eyeleted, and weather-proof. Enter your dimensions in millimeters to get an instant quote for your custom site banners.
+                </p>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm font-bold text-white">
+                    <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand-accent text-xl"></i> Fully Hemmed</span>
+                    <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand-accent text-xl"></i> Metal Eyelets</span>
+                    <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand-accent text-xl"></i> Outdoor Ready</span>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                <div class="bg-white p-6 sm:p-8 rounded-[35px] shadow-2xl w-full max-w-md border-4 border-white/10 relative">
+                    
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-black text-gray-900 mb-1">Instant Price</h3>
+                        <p class="text-sm text-gray-500 font-medium">Enter your banner size in millimeters (mm)</p>
+                    </div>
+
+                    <div id="calculator-container" class="flex flex-col gap-4">
+                        <div class="flex items-end gap-3">
+                            <div class="flex-1 flex flex-col">
+                                <label for="calc-width" class="text-xs text-gray-600 font-bold mb-1.5 pl-4 uppercase tracking-wider">Width (mm)</label>
+                                <input type="number" id="calc-width" placeholder="e.g. 2000" class="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl text-lg font-semibold focus:outline-none focus:border-brand-blue transition-colors shadow-sm">
+                            </div>
+                            
+                            <div class="flex-1 flex flex-col">
+                                <label for="calc-height" class="text-xs text-gray-600 font-bold mb-1.5 pl-4 uppercase tracking-wider">Height (mm)</label>
+                                <input type="number" id="calc-height" placeholder="e.g. 1000" class="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl text-lg font-semibold focus:outline-none focus:border-brand-blue transition-colors shadow-sm">
+                            </div>
+
+                            <button id="update-btn" class="bg-brand-green text-white px-5 py-3 rounded-2xl font-black text-lg hover:bg-[#3cdec5] active:scale-95 transition-all shadow-md h-[52px] flex items-center justify-center">
+                                <i class="ph-bold ph-calculator"></i>
+                            </button>
+                        </div>
+                        
+                        <div id="size-error" class="hidden bg-red-50 text-red-600 text-sm font-semibold p-3 rounded-xl border border-red-100"></div>
+
+                        <div class="mt-2 bg-gray-50 border-2 border-gray-200 rounded-2xl px-5 py-4 flex items-center justify-between shadow-inner">
+                            <span class="text-gray-700 font-bold uppercase tracking-wider text-sm">Total Price</span>
+                            <span id="price-total" class="text-3xl font-black text-brand-green">£0.00</span>
+                        </div>
+
+                        <a href="https://wa.me/message/6KIH4X5JNMV7F1" target="_blank" class="mt-4 w-full bg-brand-navy text-white text-center py-4 rounded-2xl font-bold hover:bg-blue-900 transition-colors flex items-center justify-center gap-2 shadow-lg">
+                            <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Message to Order
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ph-fill ph-shield-check text-3xl text-brand-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Built for the Trade</h3>
+                    <p class="text-gray-600 font-medium text-sm">Our 440gsm PVC banners are designed to withstand British weather. Perfect for scaffolding, fences, and site boundaries.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ph-fill ph-aperture text-3xl text-brand-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Hemmed & Eyeleted</h3>
+                    <p class="text-gray-600 font-medium text-sm">Every banner comes fully finished with folded hems for extra strength and metal eyelets ready for cable-tying straight to the fence.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="ph-fill ph-rocket-launch text-3xl text-brand-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Turnaround</h3>
+                    <p class="text-gray-600 font-medium text-sm">Once the design is signed off, your banners are printed and delivered fast so you can get your name up on site immediately.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-blue-50">
+        <div class="max-w-4xl mx-auto bg-white p-10 sm:p-16 rounded-3xl shadow-xl border border-blue-100 text-center">
+            <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mb-4">Need a custom design?</h2>
+            <p class="text-lg text-gray-600 font-medium mb-8 max-w-2xl mx-auto">Don't have print-ready artwork? No problem. Send us your logo and what you want it to say, and we'll design it for you before sending it to print.</p>
+            
+            <a href="https://wa.me/message/6KIH4X5JNMV7F1" target="_blank" class="inline-flex items-center justify-center gap-3 bg-brand-navy text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-900 transition-colors shadow-md">
+                <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Chat with us on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-brand-navy py-16 px-4 border-t-4 border-brand-blue text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="index.html" class="text-2xl font-black mb-6 inline-block">MadeReal.</a>
+                    <p class="text-blue-200 text-sm font-medium mb-4">No-nonsense web design and print services for tradesmen who want the phone to ring.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 uppercase tracking-wider text-blue-300">Our Services</h4>
+                    <ul class="space-y-3 text-sm font-medium text-blue-100">
+                        <li><a href="websites.html" class="hover:text-white transition-colors">Tradesman Websites (£197)</a></li>
+                        <li><a href="print-and-signage.html" class="hover:text-white transition-colors">Van Graphics & Print</a></li>
+                        <li><a href="pvc-banners.html" class="hover:text-white transition-colors">PVC Banners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 uppercase tracking-wider text-blue-300">Who We Help</h4>
+                    <ul class="space-y-3 text-sm font-medium text-blue-100">
+                        <li><a href="websites-for-plumbers.html" class="hover:text-white transition-colors">Plumbers</a></li>
+                        <li><a href="websites-for-builders.html" class="hover:text-white transition-colors">Builders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 uppercase tracking-wider text-blue-300">Contact Us</h4>
+                    <ul class="space-y-3 text-sm font-medium text-blue-100">
+                        <li class="flex items-start gap-2"><i class="ph-fill ph-map-pin mt-1 text-blue-400"></i> 9 Market St, Colne<br>BB8 0HY</li>
+                        <li class="flex items-center gap-2"><i class="ph-fill ph-phone text-blue-400"></i> 07396 710 347</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-blue-800 text-sm text-blue-300 flex justify-between font-medium">
+                <p>Copyright © 2026 MadeReal. Designed & Built in Colne.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            var icon = this.querySelector('i');
+            menu.classList.toggle('open');
+            if (menu.classList.contains('open')) {
+                icon.classList.remove('ph-list');
+                icon.classList.add('ph-x');
+            } else {
+                icon.classList.remove('ph-x');
+                icon.classList.add('ph-list');
+            }
+        });
+
+        // Your Calculator Logic (Untouched math logic)
+        (function() {
+            const BASE_T1 = 19.94, RATE_T1 = 6.46, MAX_AREA_T1 = 2.0;
+            const BASE_T2 = 2.94, RATE_T2 = 14.96, MAX_AREA_T2 = 10.0;
+            const BASE_T3 = -21.20, RATE_T3 = 15.14;
+            const MIN_DIM = 500, MAX_HEIGHT = 2701, MAX_WIDTH = 15001;
+
+            const widthInput = document.getElementById('calc-width');
+            const heightInput = document.getElementById('calc-height');
+            const updateBtn = document.getElementById('update-btn');
+            const errorMsg = document.getElementById('size-error');
+
+            function calculate() {
+                let w = parseFloat(widthInput.value) || 0;
+                let h = parseFloat(heightInput.value) || 0;
+                let unitPrice = 0;
+                let totalExVat = 0;
+
+                errorMsg.classList.add('hidden');
+                widthInput.classList.remove('border-red-500');
+                heightInput.classList.remove('border-red-500');
+
+                if (w === 0 || h === 0) {
+                    updateDisplay(0); 
+                    return;
+                }
+
+                if (w < MIN_DIM || w > MAX_WIDTH || h < MIN_DIM || h > MAX_HEIGHT) {
+                    errorMsg.innerText = `Height must be between ${MIN_DIM}mm and ${MAX_HEIGHT}mm. Width max ${MAX_WIDTH}mm.`;
+                    errorMsg.classList.remove('hidden');
+                    
+                    if (w < MIN_DIM || w > MAX_WIDTH) widthInput.classList.add('border-red-500');
+                    if (h < MIN_DIM || h > MAX_HEIGHT) heightInput.classList.add('border-red-500');
+                    
+                    updateDisplay(0); 
+                    return;
+                }
+
+                let area = (w / 1000) * (h / 1000);
+
+                if (area > MAX_AREA_T2) {
+                    unitPrice = BASE_T3 + (area * RATE_T3);
+                } else if (area >= MAX_AREA_T1) {
+                    unitPrice = BASE_T2 + (area * RATE_T2);
+                } else {
+                    unitPrice = BASE_T1 + (area * RATE_T1);
+                }
+
+                totalExVat = Math.max(0, unitPrice);
+
+                function updateDisplay(exVat) {
+                    let vat = exVat * 0.20;
+                    let totalIncVat = exVat + vat;
+                    
+                    // Add £20 to every calculation as per your logic
+                    if(exVat > 0) totalIncVat += 20;
+
+                    document.getElementById('price-total').innerText = '£' + totalIncVat.toFixed(2);
+                }
+
+                updateDisplay(totalExVat);
+            }
+
+            updateBtn.addEventListener('click', calculate);
+
+            [widthInput, heightInput].forEach(el => {
+                el.addEventListener('keyup', function(event) {
+                    if (event.key === 'Enter') {
+                        calculate();
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
