@@ -46,7 +46,6 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-        /* Mobile Menu Animation */
         #mobile-menu { 
             transition: max-height 0.3s ease-in-out; 
             max-height: 0; 
@@ -55,37 +54,14 @@
         #mobile-menu.open { 
             max-height: 600px; 
         }
-        /* Dropdown safe hover area */
         .group:hover .group-hover\:visible {
             visibility: visible;
         }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "MadeReal",
-      "description": "No-nonsense web design and print services for tradesmen and local businesses. Zero monthly fees.",
-      "url": "https://madereal.uk",
-      "image": "images/social-share.jpg",
-      "telephone": "07396710347",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "9 Market St",
-        "addressLocality": "Colne",
-        "addressRegion": "Lancashire",
-        "postalCode": "BB8 0HY",
-        "addressCountry": "UK"
-      },
-      "priceRange": "£197 - £597",
-      "areaServed": ["Colne", "Nelson", "Burnley", "Skipton", "Pendle"],
-      "sameAs": ["https://wa.me/message/6KIH4X5JNMV7F1"]
-    }
-    </script>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
+    <!-- TOP BAR -->
     <div class="bg-brand-navy text-white py-2 px-4 text-sm font-semibold hidden sm:block">
         <div class="max-w-7xl mx-auto flex justify-center md:justify-end items-center gap-6">
             <span class="flex items-center gap-2"><i class="ph-fill ph-phone text-brand-accent"></i> Call Us: 07396 710 347</span>
@@ -93,6 +69,7 @@
         </div>
     </div>
 
+    <!-- NAVIGATION -->
     <nav class="w-full bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -150,6 +127,7 @@
         </div>
     </nav>
 
+    <!-- HERO -->
     <section class="relative bg-brand-navy py-24 sm:py-32 flex flex-col items-center justify-center text-center px-4">
         <div class="absolute inset-0 z-0">
             <img src="images/hero-bg.jpg" alt="MadeReal Tradesman Web Design" class="w-full h-full object-cover">
@@ -176,16 +154,15 @@
         </div>
     </section>
 
+    <!-- TRUST STRIP -->
     <div class="bg-blue-50 border-b border-blue-100 py-10 relative z-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-blue-200">
-                
                 <div class="pt-4 md:pt-0">
                     <div class="text-5xl font-black text-brand-navy mb-2">5.0</div>
                     <div class="flex justify-center gap-1 text-brand-accent text-lg mb-2"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
                     <p class="text-gray-600 font-bold text-sm uppercase tracking-wide">Trustpilot Rating</p>
                 </div>
-
                 <div class="pt-8 md:pt-0 flex flex-col items-center justify-center">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
                         <i class="ph-fill ph-map-pin-line text-3xl text-brand-blue"></i>
@@ -193,7 +170,6 @@
                     <h3 class="text-xl font-black text-gray-900 mb-1">100% Local</h3>
                     <p class="text-gray-600 font-medium text-sm">Serving Colne, Pendle & Burnley</p>
                 </div>
-
                 <div class="pt-8 md:pt-0 flex flex-col items-center justify-center">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
                         <i class="ph-fill ph-prohibit text-3xl text-brand-blue"></i>
@@ -201,15 +177,14 @@
                     <h3 class="text-xl font-black text-gray-900 mb-1">No Retainers</h3>
                     <p class="text-gray-600 font-medium text-sm">You pay once. You own it forever.</p>
                 </div>
-
             </div>
         </div>
     </div>
 
+    <!-- THE OFFER -->
     <section id="websites" class="py-20 px-4 bg-white border-b border-gray-200">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col lg:flex-row items-center gap-16">
-                
                 <div class="w-full lg:w-1/2">
                     <p class="text-brand-blue font-bold tracking-widest uppercase text-sm mb-2">Step 1: Get Online</p>
                     <h2 class="text-4xl sm:text-5xl font-black text-gray-900 mb-6">The £197 Website.</h2>
@@ -238,46 +213,295 @@
                             </div>
                         </li>
                     </ul>
-
                     <a href="#contact" class="bg-brand-navy text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-900 transition-all shadow-md inline-block">Message us for a preview</a>
                 </div>
-
                 <div class="w-full lg:w-1/2">
                     <div class="bg-gray-100 rounded-2xl p-4 shadow-xl border border-gray-200">
                         <img src="images/website-preview.jpg" alt="Website Design Preview" class="rounded-xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- NEW TRAILAPP STYLE TIMELINE SECTION        -->
+    <!-- ========================================== -->
+    <section class="py-24 bg-gray-50 border-b border-gray-200 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20 slide-reveal" data-direction="up">
+                <h2 class="text-4xl sm:text-5xl font-black text-gray-900 mb-6 tracking-tight">Live in 48 Hours.</h2>
+                <p class="text-xl text-gray-600 font-medium">Three simple steps to get your trade business online fast. No stress. No technical jargon.</p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                
+                <!-- Vertical Connecting Line (Hidden on Mobile) -->
+                <div class="hidden md:block absolute left-[27px] top-4 bottom-12 w-1 bg-gray-200 rounded-full"></div>
+
+                <!-- STEP 1 -->
+                <div class="relative flex flex-col md:flex-row items-center gap-12 lg:gap-20 mb-24 slide-reveal" data-direction="up" data-delay="100">
+                    
+                    <!-- Line Icon (Desktop) -->
+                    <div class="hidden md:flex absolute left-0 w-14 h-14 bg-white border-4 border-gray-100 rounded-full items-center justify-center shadow-sm z-10">
+                        <span class="text-brand-blue font-black text-xl">1</span>
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="md:pl-24 md:w-[45%] w-full text-center md:text-left z-10">
+                        <div class="md:hidden w-14 h-14 bg-brand-blue text-white rounded-full flex items-center justify-center font-black text-xl mx-auto mb-6 shadow-lg">1</div>
+                        <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tight">Message Us</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed mb-6">Send us a WhatsApp telling us your trade and business name. We'll reply instantly to start designing your free preview. <strong class="text-gray-900">This is our biggest hook—message us with your details to see it for yourself.</strong></p>
+                        <a href="https://wa.me/message/6KIH4X5JNMV7F1" class="inline-flex items-center gap-2 text-brand-blue font-bold hover:text-blue-800 transition-colors">
+                            Send a WhatsApp <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- UI Mockup Column -->
+                    <div class="md:w-[55%] w-full flex justify-center md:justify-end">
+                        <div class="bg-white border border-gray-100 rounded-3xl p-6 shadow-[0_10px_40px_rgba(0,0,0,0.08)] w-full max-w-md relative transform transition-transform hover:-translate-y-1">
+                            <div class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-100">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 shadow-inner">
+                                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-gray-900">MadeReal</span>
+                                    <span class="text-xs text-green-500 font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Online</span>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-gray-100 p-4 rounded-2xl rounded-tr-sm border border-gray-200 ml-auto max-w-[85%]">
+                                    <p class="text-sm text-gray-800 font-medium">Hi mate, I run Entwistle Paving. I need a site sorting to get more local driveway jobs.</p>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-2xl rounded-tl-sm border border-green-100 mr-auto max-w-[85%] shadow-sm">
+                                    <p class="text-sm text-gray-800 font-medium">No problem at all! Leave it with us. We'll have a stunning free mockup for you to look at by tomorrow morning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-center gap-12 lg:gap-20 mb-24 slide-reveal" data-direction="up" data-delay="100">
+                    
+                    <!-- Line Icon (Desktop) -->
+                    <div class="hidden md:flex absolute left-0 w-14 h-14 bg-white border-4 border-gray-100 rounded-full items-center justify-center shadow-sm z-10">
+                        <span class="text-brand-blue font-black text-xl">2</span>
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="md:w-[45%] w-full text-center md:text-left z-10">
+                        <div class="md:hidden w-14 h-14 bg-brand-blue text-white rounded-full flex items-center justify-center font-black text-xl mx-auto mb-6 shadow-lg">2</div>
+                        <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tight">Receive your FREE preview!</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">View your free preview of your stunning new homepage. You get to see it on mobile and desktop, interact with it, and love it before you ever open your wallet.</p>
+                    </div>
+
+                    <!-- UI Mockup Column -->
+                    <div class="md:w-[55%] w-full flex justify-center md:justify-start md:pl-24">
+                        <div class="relative h-64 sm:h-80 w-full max-w-md">
+                            
+                            <!-- Desktop Browser Frame - Entwistle Paving -->
+                            <div class="absolute top-0 right-0 w-[85%] h-48 sm:h-64 bg-slate-900 rounded-xl border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.2)] overflow-hidden transform transition-transform hover:-translate-y-1">
+                                <!-- Browser Header -->
+                                <div class="bg-gray-100 h-8 border-b border-gray-200 flex items-center px-4 gap-2">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div><div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div><div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                                </div>
+                                <!-- Website Content -->
+                                <div class="h-[calc(100%-2rem)] w-full flex flex-col relative">
+                                    <!-- Nav -->
+                                    <div class="w-full h-8 bg-slate-950/80 flex items-center justify-between px-4 border-b border-white/5 relative z-20">
+                                        <span class="text-white font-black text-[10px] tracking-widest uppercase">Entwistle <span class="text-amber-500">Paving</span></span>
+                                        <div class="flex gap-2">
+                                            <div class="w-6 h-1 bg-white/20 rounded-full"></div>
+                                            <div class="w-6 h-1 bg-white/20 rounded-full"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Hero image background -->
+                                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center opacity-40 z-0"></div>
+                                    <!-- Hero Content -->
+                                    <div class="flex-1 p-6 flex flex-col justify-center relative z-10">
+                                        <div class="w-20 h-1.5 bg-amber-500 mb-3 rounded-full"></div>
+                                        <div class="w-3/4 h-4 bg-white mb-2 rounded-full shadow-sm"></div>
+                                        <div class="w-1/2 h-4 bg-white mb-4 rounded-full shadow-sm"></div>
+                                        <div class="w-16 h-6 bg-amber-500 rounded-md shadow-md"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Phone Frame - Entwistle Paving -->
+                            <div class="absolute bottom-0 left-0 w-1/3 h-48 sm:h-60 bg-gray-900 rounded-[2rem] border-8 border-gray-800 shadow-2xl overflow-hidden transform transition-transform hover:-translate-y-2 z-10">
+                                <div class="h-full w-full bg-slate-900 flex flex-col relative pt-4">
+                                    <!-- Notch -->
+                                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-3 bg-gray-800 rounded-b-xl z-30"></div>
+                                    <!-- Nav -->
+                                    <div class="w-full h-10 bg-slate-950 flex items-center justify-between px-3 border-b border-white/5 relative z-20">
+                                        <span class="text-white font-black text-[8px] tracking-widest uppercase"><span class="text-amber-500">E</span>P</span>
+                                        <i class="ph-bold ph-list text-white text-xs"></i>
+                                    </div>
+                                    <!-- Hero image background -->
+                                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400')] bg-cover bg-center opacity-40 z-0 mt-4"></div>
+                                    <!-- Hero Content -->
+                                    <div class="flex-1 p-3 flex flex-col justify-center relative z-10">
+                                        <div class="w-12 h-1 bg-amber-500 mb-2 rounded-full"></div>
+                                        <div class="w-full h-3 bg-white mb-1.5 rounded-full shadow-sm"></div>
+                                        <div class="w-2/3 h-3 bg-white mb-3 rounded-full shadow-sm"></div>
+                                        <div class="w-full h-6 bg-amber-500 rounded-md shadow-md mt-auto"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Tag -->
+                            <div class="absolute top-1/2 left-1/4 bg-white px-4 py-2.5 rounded-full shadow-lg border border-gray-100 flex items-center gap-2 animate-bounce z-20">
+                                <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                                <span class="text-xs font-bold text-gray-800 tracking-wide uppercase">Preview Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="relative flex flex-col md:flex-row items-center gap-12 lg:gap-20 slide-reveal" data-direction="up" data-delay="100">
+                    
+                    <!-- Line Icon (Desktop) -->
+                    <div class="hidden md:flex absolute left-0 w-14 h-14 bg-white border-4 border-gray-100 rounded-full items-center justify-center shadow-sm z-10">
+                        <span class="text-brand-blue font-black text-xl">3</span>
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="md:pl-24 md:w-[45%] w-full text-center md:text-left z-10">
+                        <div class="md:hidden w-14 h-14 bg-brand-blue text-white rounded-full flex items-center justify-center font-black text-xl mx-auto mb-6 shadow-lg">3</div>
+                        <h3 class="text-3xl font-black text-gray-900 mb-4 tracking-tight">Review & Go Live</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Pay the £197 and we will flesh out your full site with all the pages you need, connect your domain name, and fully set up your 
+                            <span class="inline-flex tracking-tighter font-black mx-0.5">
+                                <span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span>
+                            </span> 
+                            Business Profile.
+                        </p>
+                    </div>
+
+                    <!-- UI Mockup Column -->
+                    <div class="md:w-[55%] w-full flex justify-center md:justify-end">
+                        <div class="bg-white border border-gray-100 rounded-3xl p-6 sm:p-8 shadow-[0_10px_40px_rgba(0,0,0,0.08)] w-full max-w-md transform transition-transform hover:-translate-y-1">
+                            <div class="flex gap-4 items-center mb-6 pb-6 border-b border-gray-100">
+                                <div class="w-16 h-16 bg-blue-50 border border-blue-100 rounded-xl flex items-center justify-center shadow-inner shrink-0">
+                                    <span class="text-xl font-black text-brand-blue">G</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900 leading-tight mb-1">Entwistle Paving</h4>
+                                    <div class="flex items-center gap-1 text-brand-accent text-sm">
+                                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                        <span class="text-gray-500 font-semibold ml-1 text-xs">(5.0)</span>
+                                    </div>
+                                    <p class="text-xs text-gray-500 font-medium mt-1">Open 24 Hours • Colne, Lancashire</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between bg-green-50 border border-green-100 p-4 rounded-2xl shadow-inner">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white shadow-md shadow-green-500/30 shrink-0">
+                                        <i class="ph-bold ph-check text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <span class="block font-black text-green-900 text-sm">Full Website Live</span>
+                                        <span class="block text-green-700 text-xs font-semibold mt-0.5">Google Profile verified</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+    <!-- ========================================== -->
 
-    <section class="py-20 px-4 bg-white border-b border-gray-200">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Live in 48 Hours.</h2>
-                <p class="text-xl text-gray-600 font-medium">Three simple steps to get your trade business online fast.</p>
-            </div>
+    <!-- ========================================== -->
+    <!-- WHAT'S INCLUDED SECTION (NEW LAYOUT)       -->
+    <!-- ========================================== -->
+    <section class="py-24 px-4 bg-gray-50 border-b border-gray-200 overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 relative overflow-hidden">
-                    <div class="text-8xl font-black text-brand-blue/10 absolute -top-4 -right-2">1</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">Message Us</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed relative z-10">Send us a WhatsApp telling us your trade and business name. We'll reply instantly to start designing your free preview.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 relative overflow-hidden">
-                    <div class="text-8xl font-black text-brand-blue/10 absolute -top-4 -right-2">2</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">We Build Your Preview</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed relative z-10">You get on with your job. We spend the next 24-48 hours building the site, writing the content, and optimizing it for your local area.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 relative overflow-hidden">
-                    <div class="text-8xl font-black text-brand-blue/10 absolute -top-4 -right-2">3</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3 relative z-10">Review & Go Live</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed relative z-10">We send you a private link. If you love it, you pay the £197. We connect your domain name and set up your Google Business Profile.</p>
+            <!-- Section Header -->
+            <div class="text-center mb-12 slide-reveal" data-direction="up">
+                <h2 class="text-cyan-600 font-extrabold tracking-widest text-xs sm:text-sm mb-3 uppercase">Transparent Value</h2>
+                <h3 class="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">What's Included?</h3>
+            </div>
+
+            <!-- Top Wide Card (Checklist) -->
+            <div class="bg-white border border-gray-100 rounded-[2rem] p-8 sm:p-12 shadow-[0_15px_40px_rgba(0,0,0,0.04)] mb-6 slide-reveal" data-direction="up" data-delay="100">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="200">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Multi-Page Site</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="250">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg flex items-center">
+                            Full <span class="inline-flex tracking-tighter font-black mx-1.5 text-xl"><span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span></span> Setup
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="300">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Lead-Gen Forms</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="350">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Image Gallery</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="400">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Mobile-First Design</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="450">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">On-Page SEO</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="500">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Secure Hosting</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="550">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Fast Load Speeds</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="600">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">Custom Branding</span>
+                    </div>
+                    <div class="flex items-center gap-4 slide-reveal" data-direction="pop" data-delay="650">
+                        <i class="ph-bold ph-check-circle text-2xl text-emerald-500"></i>
+                        <span class="font-bold text-gray-900 text-lg">100% Ownership</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- Bottom Two Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Security Card -->
+                <div class="bg-white border border-gray-100 rounded-[2rem] p-8 sm:p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] slide-reveal flex flex-col justify-center" data-direction="up" data-delay="300">
+                    <div class="w-16 h-16 rounded-full bg-cyan-50 flex items-center justify-center mb-6 border border-cyan-100">
+                        <i class="ph-bold ph-shield-check text-3xl text-cyan-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-2">Bank-Grade Security</h3>
+                    <p class="text-gray-500 font-medium text-[15px] leading-relaxed">Never worry about getting hacked.</p>
+                </div>
+                <!-- Google Card -->
+                <div class="bg-white border border-gray-100 rounded-[2rem] p-8 sm:p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] slide-reveal flex flex-col justify-center" data-direction="up" data-delay="400">
+                    <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center mb-6 border border-blue-100">
+                        <i class="ph-bold ph-magnifying-glass text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-2 flex items-center">
+                        Found on <span class="inline-flex tracking-tighter font-black mx-1.5 text-2xl"><span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span></span>
+                    </h3>
+                    <p class="text-gray-500 font-medium text-[15px] leading-relaxed">Optimized from day one to rank on Maps.</p>
+                </div>
+            </div>
+
         </div>
     </section>
+    <!-- ========================================== -->
 
     <section id="branding" class="py-20 px-4 bg-gray-50 border-b border-gray-200">
         <div class="max-w-6xl mx-auto">
@@ -289,19 +513,19 @@
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">Once your website is sorted, we make sure you look professional on the road and on the job. We supply high-quality physical branding.</p>
                     
                     <div class="grid grid-cols-2 gap-4 mb-10">
-                        <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
                             <i class="ph-fill ph-truck text-2xl text-brand-blue"></i>
                             <span class="font-bold text-gray-800">Van Graphics</span>
                         </div>
-                        <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
                             <i class="ph-fill ph-identification-card text-2xl text-brand-blue"></i>
                             <span class="font-bold text-gray-800">Business Cards</span>
                         </div>
-                        <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
                             <i class="ph-fill ph-storefront text-2xl text-brand-blue"></i>
                             <span class="font-bold text-gray-800">Shop Signage</span>
                         </div>
-                        <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 shadow-sm flex items-center gap-3">
                             <i class="ph-fill ph-t-shirt text-2xl text-brand-blue"></i>
                             <span class="font-bold text-gray-800">Workwear Print</span>
                         </div>
@@ -321,7 +545,7 @@
         </div>
     </section>
 
-    <section id="systems" class="py-20 px-4 bg-brand-navy text-white border-b border-blue-900">
+    <section id="systems" class="py-24 px-4 bg-brand-navy text-white border-b border-blue-900">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <p class="text-blue-300 font-bold tracking-widest uppercase text-sm mb-2">Step 3: Run the Business</p>
@@ -330,24 +554,24 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800 text-center">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800 text-center shadow-lg">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                         <i class="ph-fill ph-calendar-check text-3xl text-white"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Automated Bookings</h3>
                     <p class="text-blue-200 font-medium">Perfect for salons and clinics. Let your customers book themselves in 24/7 without you lifting a finger.</p>
                 </div>
 
-                <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800 text-center">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800 text-center shadow-lg">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                         <i class="ph-fill ph-clipboard-text text-3xl text-white"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Trade Job Trackers</h3>
                     <p class="text-blue-200 font-medium">Manage quotes, assign jobs to your staff, and track materials directly from your mobile phone.</p>
                 </div>
 
-                <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800 text-center">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div class="bg-blue-900/50 p-8 rounded-2xl border border-blue-800 text-center shadow-lg">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                         <i class="ph-fill ph-robot text-3xl text-white"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">AI Receptionists</h3>
@@ -355,7 +579,7 @@
                 </div>
             </div>
 
-            <div class="bg-white text-brand-navy p-8 rounded-2xl max-w-2xl mx-auto text-center shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="bg-white text-brand-navy p-8 rounded-2xl max-w-2xl mx-auto text-center shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 transform transition-transform hover:-translate-y-1">
                 <div class="text-left">
                     <div class="text-4xl font-black mb-1">£597 <span class="text-lg text-gray-500 font-semibold uppercase">Setup</span></div>
                     <p class="text-gray-600 font-medium text-sm">+ £29/month system running costs</p>
@@ -393,7 +617,7 @@
         </div>
     </section>
 
-    <section id="reviews" class="py-20 px-4 bg-white border-b border-gray-200">
+    <section id="reviews" class="py-24 px-4 bg-white border-b border-gray-200">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Don't just take our word for it.</h2>
@@ -462,29 +686,29 @@
         </div>
     </section>
 
-    <section class="py-20 px-4 bg-gray-50 border-b border-gray-200">
+    <section class="py-24 px-4 bg-gray-50 border-b border-gray-200">
         <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
+            <div class="text-center mb-16">
                 <h2 class="text-4xl sm:text-5xl font-black text-gray-900 mb-4">Straight answers.</h2>
                 <p class="text-xl text-gray-600 font-medium">No jargon. Just the facts about how we work.</p>
             </div>
             
             <div class="space-y-6">
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm transition-transform hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
                         <i class="ph-fill ph-question text-brand-blue text-2xl"></i> What is the catch with "Zero Monthly Fees"?
                     </h3>
                     <p class="text-gray-600 font-medium leading-relaxed">There is no catch. We don't charge you a £60/month retainer just to keep your site online. You pay £197 once for the build. *You only pay a standard registrar fee (about £9/year) directly to your provider for your domain name (e.g. yourname.co.uk), which you own entirely.</p>
                 </div>
                 
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm transition-transform hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
                         <i class="ph-fill ph-google-logo text-brand-blue text-2xl"></i> Do I show up on Google?
                     </h3>
                     <p class="text-gray-600 font-medium leading-relaxed">Yes. We build your site with local SEO in mind, and more importantly, we set up your Google Business Profile. This is what puts you on the local map pack when people search for your trade in your local area.</p>
                 </div>
                 
-                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm transition-transform hover:-translate-y-1">
                     <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
                         <i class="ph-fill ph-wrench text-brand-blue text-2xl"></i> What if I need updates later?
                     </h3>
@@ -568,6 +792,56 @@
     </footer>
 
     <script>
+        // Vanilla JS implementation of the scroll reveal animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const reveals = document.querySelectorAll('.slide-reveal');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0');
+                        if (entry.target.dataset.transformClass) {
+                            entry.target.dataset.transformClass.split(' ').forEach(cls => {
+                                if (cls) entry.target.classList.remove(cls);
+                            });
+                        }
+                        entry.target.classList.add('opacity-100', 'translate-x-0', 'translate-y-0', 'scale-100');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "-10% 0px" });
+
+            reveals.forEach(el => {
+                const dir = el.dataset.direction || 'up';
+                let transformClass = 'translate-y-12';
+                
+                if (dir === 'left') transformClass = '-translate-x-12';
+                if (dir === 'right') transformClass = 'translate-x-12';
+                if (dir === 'none') transformClass = 'scale-95';
+                if (dir === 'pop') transformClass = 'scale-75 translate-y-6';
+
+                el.dataset.transformClass = transformClass;
+                
+                // Add initial classes for hidden state
+                el.classList.add('opacity-0', 'transition-all', 'duration-700');
+                
+                // Keep the initial transform active until revealed
+                transformClass.split(' ').forEach(cls => el.classList.add(cls));
+
+                if (dir === 'pop') {
+                    el.style.transitionTimingFunction = 'cubic-bezier(0.34, 1.56, 0.64, 1)';
+                } else {
+                    el.style.transitionTimingFunction = 'cubic-bezier(0.2, 0.8, 0.2, 1)';
+                }
+                
+                if (el.dataset.delay) {
+                    el.style.transitionDelay = el.dataset.delay + 'ms';
+                }
+
+                observer.observe(el);
+            });
+        });
+
+        // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             var menu = document.getElementById('mobile-menu');
             var icon = this.querySelector('i');
